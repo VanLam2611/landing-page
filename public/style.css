@@ -103,10 +103,11 @@ header{
     align-self: stretch;
     border-radius: 16px;
     overflow: hidden;
+    /* height: 547px; */
 }
 
 .card-header .card-img img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -130,6 +131,10 @@ header{
 
     .card-header .description{
         min-height: 114px;
+    }
+
+    .card-header .card-img{
+        height: 223px;
     }
     
     .section-page{
@@ -206,6 +211,7 @@ header{
 }
 
 .heading h2{
+    font-family: Montserrat;
     color: var(--danger);
     text-align: center;
     font-size: 30px;
@@ -273,7 +279,7 @@ header{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024.98px) {
     .wrapper-main .wrapper-item .blockquotes .content{
         max-height: 240px;
         overflow: hidden;
@@ -294,6 +300,11 @@ header{
     .group-subtitle .outstanding{
         display: block;
     }
+
+    .wrapper-main.option-1 .wrapper-item .wrapper-img,
+    .wrapper-main.option-1 .wrapper-item .wrapper-img img{
+        height: 460px;
+    }
 }
 
 @media screen and (max-width: 768.98px) {
@@ -301,10 +312,9 @@ header{
         margin: 0 20px;
     }
 
-    .wrapper-main .wrapper-item .wrapper-img,
-    .wrapper-main .wrapper-item .wrapper-img img{
-        width: 100%;
-        aspect-ratio: 289 / 407;
+    .wrapper-main.option-1 .wrapper-item .wrapper-img,
+    .wrapper-main.option-1 .wrapper-item .wrapper-img img{
+        height: 407px;
     }
 }
 
@@ -327,6 +337,11 @@ header{
     .wrapper-main .wrapper-item .blockquotes .quotes.right{
         transform: translateY(-10px);
     }
+
+    .wrapper-main.option-1 .wrapper-item .wrapper-img,
+    .wrapper-main.option-1 .wrapper-item .wrapper-img img{
+        height: 275px;
+    }
 }
 
 @media screen and (max-width: 320.98px){
@@ -343,6 +358,11 @@ header{
     .wrapper-main .wrapper-item .blockquotes .content{
         margin-left: 35px;
     }
+
+    .wrapper-main.option-1 .wrapper-item .wrapper-img,
+    .wrapper-main.option-1 .wrapper-item .wrapper-img img{
+        height: 237.25px;
+    }
 }
 
 .wrapper-main.option-2{
@@ -350,7 +370,33 @@ header{
 }
 
 .wrapper-main .body .list-item{
-    margin: 25px 0;
+    margin-top: 25px;
+}
+
+.wrapper-main .body .list-item ul{
+    margin-bottom: 0;
+}
+
+.wrapper-main .body .list-item ul li{
+    margin-bottom: 30px;
+}
+
+.wrapper-main .body .list-item ul li:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper-main.option-2 .wrapper-item .wrapper-img,
+.wrapper-main.option-2 .wrapper-item .wrapper-img img{
+    height: 659px;
+}
+
+.wrapper-main .body .list-item .note{
+    color: var(--dark);
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.6px; /* 160% */
 }
 
 
@@ -389,10 +435,20 @@ header{
     .section-page .heading h2{
         font-size: 30px;
     }
+    .section-page.trip .heading h2{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 375.98px) {
+    .section-page.trip .heading h2{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 320.98px) {
-    .section-page .heading h2{
+    .section-page .heading h2,
+    .section-page.trip .heading h2{
         font-size: 25px;
     }
 }
@@ -450,7 +506,7 @@ header{
     letter-spacing: -0.16px;
 }
 
-@media screen and (max-width: 768.98px){
+@media screen and (max-width: 1024.98px){
     .national .wrapper-body .card-img,
     .national .wrapper-body .card-img img{
         height: 290px;
@@ -470,6 +526,18 @@ header{
 @media screen and (max-width: 375.98px){
     .national .heading h2 .outstanding{
         font-size: 1.874em;
+    }
+
+    .national .wrapper-body .card-img,
+    .national .wrapper-body .card-img img{
+        height: 251px;
+    }
+}
+
+@media screen and (max-width: 320.98px){
+    .national .wrapper-body .card-img,
+    .national .wrapper-body .card-img img{
+        height: 172px;
     }
 }
 
@@ -532,6 +600,11 @@ header{
     .introduct .group-subtitle .outstanding{
         font-size: 30px;
     }
+
+    .introduct .wrapper-main .wrapper-item .wrapper-img .img{
+        height: 261px;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 320.98px){
@@ -560,6 +633,11 @@ header{
     .thumbnail-footer.section-page{
         margin-bottom: 70px;
     }
+
+    .thumbnail-footer img{
+        height: 316px;
+        aspect-ratio: none;
+    }
 }
 
 @media screen and (max-width: 768.98px){
@@ -572,6 +650,12 @@ header{
     .thumbnail-footer.section-page{
         margin-bottom: 47.25px;
     }
+
+    .thumbnail-footer img{
+        height: 157.5px;
+        aspect-ratio: unset;
+    }
+    
 }
 
 @media screen and (max-width: 375.98px){
