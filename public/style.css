@@ -342,6 +342,10 @@ header{
     .wrapper-main.option-1 .wrapper-item .wrapper-img img{
         height: 275px;
     }
+
+    .heading{
+        margin-bottom: 25px;
+    }
 }
 
 @media screen and (max-width: 320.98px){
