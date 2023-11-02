@@ -584,6 +584,14 @@ header{
     .introduct .group-subtitle .outstanding{
         font-size: 40px;
     }
+
+    .introduct .wrapper-main .wrapper-item:first-child{
+        order: 1!important;
+    }
+
+    .introduct .wrapper-main .wrapper-item:last-child{
+        order: 2!important;
+    }
 }
 
 @media screen and (max-width: 425.98px){
