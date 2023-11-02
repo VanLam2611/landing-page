@@ -559,6 +559,14 @@ header{
     .introduct .wrapper-main .wrapper-item .wrapper-img .img{
         height: 818px;
     }
+
+    .introduct .wrapper-main .wrapper-item:first-child{
+        order: 2!important;
+    }
+
+    .introduct .wrapper-main .wrapper-item:last-child{
+        order: 1!important;
+    }
 }
 
 @media screen and (max-width: 768.98px){
